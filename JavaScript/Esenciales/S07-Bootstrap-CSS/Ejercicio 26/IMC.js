@@ -22,6 +22,6 @@ function calcularImc(altura, peso) {
 }
 
 // TODO: Pendiente crear la función que convierte de centímetros a metros
-function convertirCmMetros(centimentros) {
+function convertirCmMetros(centimetros) {
     return 0;
 }
