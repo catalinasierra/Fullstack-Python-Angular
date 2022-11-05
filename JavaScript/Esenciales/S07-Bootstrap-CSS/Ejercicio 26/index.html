@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS -  Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Calculadora de IMC</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Ingrese su Talla</label>  
+          <div class="col-md-4">
+          <input id="Talla" name="Talla" type="text" placeholder="Cm" class="form-control input-md" required="">
+          
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Peso">Ingrese su Peso </label>  
+          <div class="col-md-5">
+          <input id="Peso" name="Peso" type="text" placeholder="Kg" class="form-control input-md" required="">
+        
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Calcular"></label>
+          <div class="col-md-4">
+            <button id="Calcular" name="Calcular" class="btn btn-success">Calcular</button>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="imc">IMC</label>  
+          <div class="col-md-5">
+          <input id="imc" name="imc" type="text" placeholder="" readonly>
+            
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        <script src="./IMC.js"></script> 
+</body>
+</html>

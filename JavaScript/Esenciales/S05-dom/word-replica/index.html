@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-EU">
+
+<head>
+    <title>JavaScript</title>
+    <style>
+        .primera-letra {
+            font-size: 35px;
+            line-height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <p>
+        <span class="primera-letra">J</span>avaScript es un lenguaje intepretado que se ejecuta en el navegador. Hay un
+        montón de librerías y frameworks
+        para crear aplicaciones modernas bajo este lenguaje.
+    </p>
+    <p>
+        <span id="primeraLetra">J</span>avaScript es un lenguaje intepretado que se ejecuta en el navegador. Hay un
+        montón de librerías y frameworks
+        para crear aplicaciones modernas bajo este lenguaje.
+    </p>
+    <figure>
+        <img src="images/image002.jpg" alt="Panorama" width="100%">
+        <caption>Ilustración 1. Fondo creado con JavaScript</caption>
+    </figure>
+    <p>
+        A continuación un emoji azul:
+    </p>
+    <img src="images/image003.png" alt="Panorama" width="100%">
+
+
+    <script>
+        // window.onload = function(event) {
+        //     console.log('La página se cargó correctamente.');
+
+        //     document.getElementsByTagName('h1')[0].style.color = '#2F5496';
+        //     document.getElementsByTagName('h1')[0].style.textAlign = 'center';
+        // }
+
+        document.getElementsByTagName('h1')[0].style.color = '#2F5496';
+        document.getElementsByTagName('h1')[0].style.textAlign = 'center';
+
+        // document.getElementsByTagName('p1')[0].style.textTransform = 'Capitalize';
+
+
+        //var d = document.getElementsByTagName('h1')
+        //Object.keys(d).forEach(a => {
+        //    d[a].addEventListener('mouseenter', function (e) {
+        //        e.target.style.color = "red"
+        //    })
+        //    d[a].addEventListener('mouseleave', function (e) {
+        //        e.target.style.color = "#2F5496"
+        //    })
+        //})
+
+        // var d = document.getElementsByTagName('h1')
+        // Object.keys(d).forEach(a => {
+        //     d[a].addEventListener('mouseenter', function (e) {
+        //         document.querySelector("h1").style.color = "red"
+        //     })
+        //     d[a].addEventListener('mouseleave', function (e) {
+        //         document.querySelector("h1").style.color = "black"
+        //     })
+        // })
+
+        document.get
+        const encabezadoPrincipal = document.querySelector('h1');
+        encabezadoPrincipal.addEventListener('mouseenter', function (e) {
+            encabezadoPrincipal.style.color = "red"
+        });
+        encabezadoPrincipal.addEventListener('mouseleave', function (e) {
+            encabezadoPrincipal.style.color = "black"
+        });
+
+
+        document.querySelectorAll('p').forEach((e) => {
+            e.style.fontSize = '30px';
+        })
+        // for(var i = 0, len = elems.length; i < len; i++) {
+        //     elems[i].style.fontSize = '30px';
+        // }
+
+
+        var m = document.getElementsByTagName('p')
+        function mayuscula(m) {
+            return m.charAt(0).toUpperCase() + m.slice(1);
+        }
+
+        // Aplicar estilos directamente desde el código:
+        const primeraLetra = document.getElementById('primeraLetra');
+        primeraLetra.style.fontSize = '60px';
+        primeraLetra.style.lineHeight = '80px';
+
+    </script>
+</body>
+
+</html>
