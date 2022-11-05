@@ -20,3 +20,8 @@ function calcularIMC(event) {
 function calcularImc(altura, peso) {
     return peso / Math.pow(altura, 2);
 }
+
+// TODO: Pendiente crear la función que convierte de centímetros a metros
+function convertirCmMetros(centimentros) {
+    return 0;
+}
