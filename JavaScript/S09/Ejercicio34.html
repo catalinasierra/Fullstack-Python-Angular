@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /*Botón*/
+
+    </style>
+    <h1> Formato Fecha</h1>
+<!-- Text input-->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="ingresoAño">Ingrese el año</label>  
+    <div class="col-md-5">
+    <input id="ingresoAño" name="ingresoAño" type="number" placeholder="" class="form-control input-md" required="" min="2000" max="2022" onkeypress="concatenar(this)">
+      
+    </div>
+  </div>
+  
+  <!-- Select Basic -->
+  <div class="form-group meses" style="display: none;">
+    <label class="col-md-4 control-label" for="seleccionMes">Seleccione un mes</label>
+    <div class="col-md-5">
+      <select id="meses" name="seleccionMes" class="seleccionMes">
+        <option class="drop-down" value="01">Enero</option>
+        <option class="drop-down" value="01">Enero</option>
+        <option class="drop-down" value="02">Febrero</option>
+        <option class="drop-down" value="03">Marzo</option>
+        <option class="drop-down" value="04">Abril</option>
+        <option class="drop-down" value="05">Mayo</option>
+        <option class="drop-down" value="06">Junio</option>
+        <option class="drop-down" value="07">Julio</option>
+        <option class="drop-down" value="08">Agosto</option>
+        <option class="drop-down" value="09">Septiembre</option>
+        <option class="drop-down" value="10">Octubre</option>
+        <option class="drop-down"value="11">Noviembre</option>
+        <option class="drop-down"value="12">Diciembre</option>
+
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group dias" style="display: none;">
+    <label class="col-md-4 control-label" for="seleccionDia">Seleccione un dia</label">
+    <div class="col-md-5">
+      <select id="dias" name="seleccionDia" class="seleccionDia">
+        <option class="drop-down" value="01">1 - w1</option>
+        <option class="drop-down" value="01">1 - w1</option>
+        <option class="drop-down" value="02">2 - w1</option>
+        <option class="drop-down" value="03">3 - w1</option>
+        <option class="drop-down" value="04">4 - w1</option>
+        <option class="drop-down" value="05">5 - w1</option>
+        <option class="drop-down" value="06">6 - w1</option>
+        <option class="drop-down" value="07">7 - w1</option>
+        <option class="drop-down" value="08">8 - w2</option>
+        <option class="drop-down" value="09">9 - w2</option>
+        <option class="drop-down" value="10">10 - w2</option>
+        <option class="drop-down"value="11">11 - w2</option>
+        <option class="drop-down" value="12">12 - w2</option>
+        <option class="drop-down" value="13">13 - w2</option>
+        <option class="drop-down" value="14">14 - w2</option>
+        <option class="drop-down" value="15">15 - w3</option>
+        <option class="drop-down" value="16">16 - w3</option>
+        <option class="drop-down" value="17">17 - w3</option>
+        <option class="drop-down" value="18">18 - w3</option>
+        <option class="drop-down" value="19">19 - w3</option>
+        <option class="drop-down" value="20">20 - w3</option>
+        <option class="drop-down" value="21">21 - w3</option>
+        <option class="drop-down"value="22">22 - w4</option>
+        <option class="drop-down" value="23">23 - w4</option>
+        <option class="drop-down" value="24">24 - w4</option>
+        <option class="drop-down" value="25">25 - w4</option>
+        <option class="drop-down" value="26">26 - w4</option>
+        <option class="drop-down" value="27">27 - w4</option>
+        <option class="drop-down" value="28">28 - w4</option>
+        <option class="drop-down" value="29">29 - w4</option>
+        <option class="drop-down" value="30">30 - w4</option>
+        <option class="drop-down" value="31">31 - w4</option>
+       
+
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="container bottom">
+    <button id="Boton" type="button" class="butn">
+        Calcular Fecha
+    </button>
+</div>
+
+  <h1 id="año" >Año seleccionado: <br></h1>
+  <h1 id="mes" >Mes seleccionado: <br></h1>
+  <h1 id="dia" >Dia seleccionado: <br></h1>
+  <h1 id="fecha" >Fecha: <br></h1>
+  <h1 id="diasFaltantes" >Dias Faltantes del año: <br></h1>
+</script>
+  </fieldset>
+  <script src="./Ejercicio34.js"></script></script>
+    
+</body>
+</html>
