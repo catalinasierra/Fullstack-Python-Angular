@@ -8,7 +8,19 @@
 </head>
 <body>
     <p>
-        Letra: <input type="text" id="letra" minlength="1" maxlength="1">
+        Letra: <input type="text" id="letra" minlength="1" maxlength="1" style="text-transform: uppercase;">
+        <div class="form-group caracteres" >
+            <label class="col-md-4 control-label" for="caracteres">Seleccione un caracter</label>
+            <div class="col-md-5">
+              <select id="caracteres" name="caracteres" class="caracter">
+                <option class="drop-down" value="*">*</option>
+                <option class="drop-down" value="*">*</option>
+                <option class="drop-down" value="$">$</option>
+                <option class="drop-down" value="#">#</option>
+                <option class="drop-down" value="+">+</option>         
+              </select>
+            </div>
+          </div>
         <button id="dibujarPatron">Dibujar patrón</button>
     </p>
     Resultado: <br>

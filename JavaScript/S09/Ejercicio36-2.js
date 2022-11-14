@@ -1,17 +1,23 @@
 window.onload = function (event) {
 
-    document.getElementById('Boton').addEventListener("click", palindrome);
-    let str = document.getElementById('posicion').value;
+    document.getElementById('Boton').addEventListener("click", esPalindromo);
+    
 
-function palindrome(srt) {
-    var re = /[^A-Za-z0-9]/g;
-    str = str.toLowerCase().replace(re, '');
-    var len = str.length;
-    for (var i = 0; i < len/2; i++) {
-      if (str[i] !== str[len - 1 - i]) {
-          alert (false);
-      }
+    function esPalindromo(event){
+        let str = document.getElementById('frase').value;
+        let ultimo = str.length-1;
+        if(str[0] != str[ultimo]){
+            return false;
+        }
+        if (str.length() < 2){
+            return true;
+        }
+        let subcadena= str.substr(1, ultimo-1);
+        if (esPalindromo(subcadena)){
+            return true;
+        }
+        return false; 
+
     }
-    alert (true);
-   }
+
 }
